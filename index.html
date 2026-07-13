@@ -178,7 +178,7 @@
 </head>
 <body class="bg-gray-50 text-gray-900 dark:bg-darkBg dark:text-gray-100 transition-colors duration-200 text-xs">
 
-    <div id="loginOverlay" class="login-overlay" style="display: none;">
+    <div id="loginOverlay" class="login-overlay">
         <div class="login-container">
             <div class="login-header">
                 <h2>DEVICE ACTIVATION</h2>
@@ -1258,7 +1258,6 @@
         }
 
         window.onload = function() {
-            document.getElementById("loginOverlay").style.display = "flex";
             const savedUser = localStorage.getItem('saved_username');
             const savedPass = localStorage.getItem('saved_password');
             const isRemembered = localStorage.getItem('remember_me_status');
